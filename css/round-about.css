@@ -36,15 +36,40 @@ body {
     background-size: cover;
 }
 
-    #intro #introBg {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(grey, black) center center;
-        opacity: .6;
-        width: 100%;
-        height: 100%;
-    }
+#intro #introBg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(grey, black) center center;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+}
+
+#firstTile {
+    /*background-image: linear-gradient(grey, black);*/
+    /* Half height */
+    /*height: 50%;*/
+    /* Center and scale the image nicely */
+    position: relative;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#firstTile #firstTileBg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(grey, black) center center;
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+}
