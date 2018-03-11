@@ -48,10 +48,10 @@
 
     <!-- Page Content -->
 
-    <div class="container.fluid">
-        <div class="container.fluid" id="backgroundImage">
+    <div class="container">
+        <div class="container" id="backgroundImage">
 
-            <!-- Introduction Row -->
+            <!-- Introduction Row
             <div id="intro">
                 <div id="introBg"></div>
                 <h1 class="p-4 text-white">
@@ -59,22 +59,22 @@
                     <small>It's Nice to Meet You!</small>
                 </h1>
                 <p class="px-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
-            </div>
+            </div> -->
             <!-- Team Members Row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="p-4 text-white">Live here, work here, learn here, grow here...</h2>
+                    <h2 class="p-4 text-black" id="titleText">Live here, work here, learn here, grow here...</h2>
                 </div>
                 <!-- First Tile Section -->
-                <div class="col-lg-4 col-sm-6 text-center p-3" id="firstTile">
-                  <div id="firstTileBg"></div>
-                    <h3 class="p-4 text-left text-black">WE ARE
+                <div class="col-lg-4 col-sm-6 text-center p-3" onmouseout="unfadeTile(1)" onmouseover="fadeTile(1)" id="firstTile">
+                  <div onmouseover="fadeTile(1)" onmouseout="unfadeTile(1)" id="firstTileBg"></div>
+                    <h3 class="p-4 text-left text-white">WE ARE
                         <small>...</small>
                     </h3>
                     <br>
                     <br>
                     <br>
-                    <p class="p-4 text-right text-black">...Faculty and Students of the Penn State Music Education Department</p>
+                    <p class="p-4 text-right text-white">...Faculty and Students of the Penn State Music Education Department</p>
                   </div>
                 <!-- Second Tile Section -->
                 <div class="center-block col-lg-4 col-sm-6 p-3" id="secondTile">
@@ -102,11 +102,11 @@
                 <!-- Fourth Tile Section -->
                 <div class="col-lg-4 col-sm-6 text-center p-3" id="fourthTile">
                   <div id="fourthTileBg"></div>
-                  <h3 class="p-4 text-left text-black">SCHOLARLY COMMUNITY</h3>
+                  <h3 class="p-4 text-left text-white">SCHOLARLY COMMUNITY</h3>
                   <br>
                   <br>
                   <br>
-                  <p class="p-4 text-right text-black">Sharing with the music education community</p>
+                  <p class="p-4 text-right text-white">Sharing with the music education community</p>
                 
                 </div>
                 <!-- Fifth Tile Section -->
@@ -127,12 +127,12 @@
                 <!-- Sixth Tile Section -->
                 <div class="col-lg-4 col-sm-6 text-center p-3" id="sixthTile">
                   <div id="sixthTileBg"></div>
-                  <h3 class="p-4 text-left text-black">What path do YOU want to 
+                  <h3 class="p-4 text-left text-white">What path do YOU want to 
                       take?</h3>
                   <br>
                   <br>
                   <br>
-                  <p class="p-4 text-left text-black">This is YOUR journey!</p>
+                  <p class="p-4 text-left text-white">This is YOUR journey!</p>
                 </div>
             </div>
         </div>
@@ -150,6 +150,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/mainScripts.js"></script>
 
   </body>
 
