@@ -1,3 +1,5 @@
+var messages;
+
 function fadeTile (tileNum) {
     console.log("faded tile");
     var background;
@@ -42,4 +44,12 @@ function unfadeTile (tileNum) {
             break; 
     }
 
+}
+
+function getData () {
+    getMessages(function(data){
+        console.log(data);
+        messages = data;
+        console.log(messages);
+    });
 }
