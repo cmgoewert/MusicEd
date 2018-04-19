@@ -3,6 +3,13 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-round-about/blob/master/LICENSE)
  */
+#sampleColors {
+  color: #3c64a4;
+  color: #281911;
+  color: #d6d4d3;
+  color: #7a92c0;
+  color: #504828;
+}
 
 body {
   padding-top: 54px;
@@ -14,7 +21,6 @@ body {
     padding-top: 56px;
   }
 }
-
 #backgroundImage {
     background-image: url("../images/oldmainbackground.jpg");
     /* Half height */
@@ -23,6 +29,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #intro, #firstTile, #secondTile, #thirdTile, #fourthTile, #fifthTile, #sixthTile {
@@ -151,4 +159,34 @@ body {
 
 #titleText {
     font-family: URW Chancery L, cursive;
+}
+
+#contactSection {
+  background-color: #7a92c0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-bottom: 0em;
+}
+
+#contactSection label{
+  color: white;
+}
+
+#navBar, #footer {
+ /* background-color: #7a92c0; */
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+}
+
+#contactConfirmation {
+  visibility: hidden;
+  color: green;
+}
+
+.remove-all-margin{
+  margin-bottom:0 ! important;
+  padding:0 ! important;
 }

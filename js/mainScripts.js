@@ -1,49 +1,27 @@
 var messages;
 
-function fadeTile (tileNum) {
-    console.log("faded tile");
-    var background;
-    switch (tileNum) {
+function fadeTile (tile, tileNum) {
+    switch (tileNum){
         case 1:
-            background = document.getElementById("firstTileBg");
-            break;
-        case 2:
+            $(tile).css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/people.jpeg)');
             break;
         case 3:
+            $(tile).css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/beaverstadium.jpeg)');
             break;
         case 4:
-            break;
-        case 5:
+            $(tile).css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/musiceducation.jpg)');
             break;
         case 6:
-            break; 
+            $(tile).css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(images/happystudent.jpg)');
+            break;
+        default:
+            $(tile).css('background-image', 'linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9))')
+            break;
     }
-
-    background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9))";
-    background.style.borderRadius = "25px";
 }
 
 function unfadeTile (tileNum) {
-    console.log("unfaded tile");
-    var background;
-
-    switch (tileNum) {
-        case 1:
-            background = document.getElementById("firstTileBg");
-            background.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.45)), url(../images/people.jpeg)";
-            break;
-        case 2:
-            break;
-        case 3:
-            break;
-        case 4:
-            break;
-        case 5:
-            break;
-        case 6:
-            break; 
-    }
-
+    $(tileNum).removeAttr('style');
 }
 
 function getData () {
@@ -52,4 +30,28 @@ function getData () {
         messages = data;
         console.log(messages);
     });
+}
+
+$('#contactForm').submit(function () {
+    sendEmail();
+    return false;
+   });
+
+function sendEmail() {
+    var email = document.getElementById("emailInput").value;
+    var name = document.getElementById("nameInput").value;
+    var message = document.getElementById("messageInput").value;
+    document.getElementById("contactConfirmation").style.visibility = "visible";
+
+    console.log(email + name + message);
+
+    messages.push({
+        from: email,
+        name: name,
+        text: message 
+    });
+
+    console.log(messages);
+    setMessages(messages);
+    
 }
