@@ -14,6 +14,7 @@
 body {
   padding-top: 54px;
   background-color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -158,7 +159,7 @@ body {
 }
 
 #titleText {
-    font-family: URW Chancery L, cursive;
+  font-family: 'Indie Flower', cursive;
 }
 
 #contactSection {
