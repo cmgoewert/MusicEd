@@ -1,58 +1,60 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Music Education</title>
+  <title>Music Education at Penn State</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat" rel="stylesheet">
-    <link href="css/round-about.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat" rel="stylesheet">
+  <link href="css/round-about.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body onload="getData()">
+<body onload="getData()">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navBar">
-      <div class="container">
-        <a class="navbar-brand" href="#">Music Education at Penn State</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactSection">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navBar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Music Education at Penn State</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSection">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Page Content -->
+  <!-- Page Content -->
 
-    <div class="container remove-all-margin">
-        <div class="container remove-all-margin" id="backgroundImage">
+  <div class="container-fluid remove-all-margin">
+    <div class="container-fluid remove-all-margin" id="backgroundImage">
+      <div class="container">
 
-            <!-- Introduction Row
+        <!-- Introduction Row
             <div id="intro">
                 <div id="introBg"></div>
                 <h1 class="p-4 text-white">
@@ -61,87 +63,118 @@
                 </h1>
                 <p class="px-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
             </div> -->
-            <!-- Team Members Row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="p-4 text-black" id="titleText">Live here, work here, learn here, grow here...</h2>
-                </div>
-                <!-- First Tile Section -->
-                <div class="col-lg-4 col-sm-6 text-center p-3" onmouseout="unfadeTile(firstTileBg)" onmouseover="fadeTile(firstTileBg, 1)" id="firstTile"   onclick="location.href='pages/howto.html';" style="cursor: pointer;">
-                  <div onmouseover="fadeTile(firstTileBg, 1)" onmouseout="unfadeTile(firstTileBg)" id="firstTileBg"></div>
-                    <h3 class="p-4 text-left text-white">WE ARE
-                        <small>...</small>
-                    </h3>
-                    <br>
-                    <br>
-                    <br>
-                    <p class="p-4 text-right text-white">...Faculty and Students of the Penn State Music Education Department</p>
-                  </div>
-                <!-- Second Tile Section -->
-                
-                <div class="center-block col-lg-4 col-sm-6 p-3" id="secondTile" onmouseout="unfadeTile(secondTileBg)" onmouseover="fadeTile(secondTileBg, 2)" onclick="location.href='pages/howto.html';" style="cursor: pointer;">
-                  <div onmouseover="fadeTile(secondTileBg, 2)" onmouseout="unfadeTile(secondTileBg)" id="secondTileBg"></div>
-                  <h3 class="px-4 text-left text-white">5 Steps Away from joining us</h3>
-                  <h4 class="px-4 text-left text-white">How do you apply?</h4>
-                  <ol class="mx-auto text-left text-white">
-                      <li>Graduate Application</li>
-                      <li>Official Transcript</li>
-                      <li>References</li>
-                      <li>500 word statement</li>
-                      <li>Resume</li>
-                    </ol> 
-                </div>
-                <!-- Third Tile Section -->
-                <div class="col-lg-4 col-sm-6 text-center p-3" id="thirdTile"  onmouseout="unfadeTile(thirdTileBg)" onmouseover="fadeTile(thirdTileBg, 3)" onclick="location.href='pages/howto.html';" style="cursor: pointer;">
-                  <div onmouseover="fadeTile(thirdTileBg, 3)" onmouseout="unfadeTile(thirdTileBg)"  id="thirdTileBg"></div>
-                  <h3 class="p-4 text-left text-white">Happy Valley!</h3>
-                  <br>
-                  <br>
-                  <br>
-                  <p class="p-4 text-right text-white">A great place to live, work and grow!</p>
-                
-                </div>
-                <!-- Fourth Tile Section -->
-                <div class="col-lg-4 col-sm-6 text-center p-3" id="fourthTile"  onmouseout="unfadeTile(fourthTileBg)" onmouseover="fadeTile(fourthTileBg, 4)" onclick="location.href='pages/howto.html';" style="cursor: pointer;">
-                  <div onmouseover="fadeTile(fourthTileBg, 4)" onmouseout="unfadeTile(fourthTileBg)"  id="fourthTileBg"></div>
-                  <h3 class="p-4 text-left text-white">SCHOLARLY COMMUNITY</h3>
-                  <br>
-                  <br>
-                  <br>
-                  <p class="p-4 text-right text-white">Sharing with the music education community</p>
-                
-                </div>
-                <!-- Fifth Tile Section -->
-                <div class="col-lg-4 col-sm-6 text-center p-3" id="fifthTile"  onmouseout="unfadeTile(fifthTileBg)" onmouseover="fadeTile(fifthTileBg, 5)" onclick="location.href='pages/howto.html';" style="cursor: pointer;">
-                  <div onmouseover="fadeTile(fifthTileBg, 5)" onmouseout="unfadeTile(fifthTileBg)"  id="fifthTileBg"></div>
-                  <h3 class="px-4 text-left text-white">SUPPORT</h3>
-                  <h4 class="px-4 text-left text-white">Penn State wants to support YOU...</h4>
-                  <ul class="mx-auto text-left text-white">
-                      <li>Assistantships, Real world teaching experience</li>
-                      <li>University Graduate Fellowship</li>
-                      <li>Bunton-Waller Graduate Awards Program</li>
-                      <li>Research and Travel Support</li>
-                      <li>Beels-Dunikoski Grants for Graduate Students</li>
-                      <li>Dissertation Scholarship</li>
-                    </ul> 
-                
-                </div>
-                <!-- Sixth Tile Section -->
-                <div class="col-lg-4 col-sm-6 text-center p-3" id="sixthTile"  onmouseout="unfadeTile(sixthTileBg)" onmouseover="fadeTile(sixthTileBg, 6)" onclick="location.href='pages/howto.html';" style="cursor: pointer;">
-                  <div onmouseover="fadeTile(sixthTileBg, 6)" onmouseout="unfadeTile(sixthTileBg)"  id="sixthTileBg"></div>
-                  <h3 class="p-4 text-left text-white">What path do YOU want to 
-                      take?</h3>
-                  <br>
-                  <br>
-                  <br>
-                  <p class="p-4 text-left text-white">This is YOUR journey!</p>
-                </div>
-            </div>
-        </div>
+        <!-- Team Members Row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="p-4 text-black" id="titleText">Live here, work here, learn here, grow here...</h2>
+          </div>
+          <!-- First Tile Section -->
+          <div class="col-lg-4 col-sm-6 text-center p-3" onmouseout="unfadeTile(firstTileBg)" onmouseover="fadeTile(firstTileBg, 1)"
+            id="firstTile" onclick="location.href='pages/howto.html';" style="cursor: pointer;">
+            <div onmouseover="fadeTile(firstTileBg, 1)" onmouseout="unfadeTile(firstTileBg)" id="firstTileBg"></div>
+            <h3 class="p-4 text-left text-white">WE ARE
+              <small>...</small>
+            </h3>
+            <br>
+            <br>
+            <br>
+            <p class="p-4 text-right text-white">...Faculty and Students of the Penn State Music Education Department</p>
+          </div>
+          <!-- Second Tile Section -->
 
-        <!-- CONTACT SECTION -->
-        <div class="mt-4 col-md-12" name="contact" id="contactSection">
-          <div class="col-md-8 mx-auto">
+          <div class="center-block col-lg-4 col-sm-6 p-3" id="secondTile" onmouseout="unfadeTile(secondTileBg)" onmouseover="fadeTile(secondTileBg, 2)"
+            onclick="location.href='pages/howto.html';" style="cursor: pointer;">
+            <div onmouseover="fadeTile(secondTileBg, 2)" onmouseout="unfadeTile(secondTileBg)" id="secondTileBg"></div>
+            <h3 class="px-4 text-left text-white">5 Steps Away from joining us</h3>
+            <h4 class="px-4 text-left text-white">How do you apply?</h4>
+            <ol class="mx-auto text-left text-white">
+              <li>Graduate Application</li>
+              <li>Official Transcript</li>
+              <li>References</li>
+              <li>500 word statement</li>
+              <li>Resume</li>
+            </ol>
+          </div>
+          <!-- Third Tile Section -->
+          <div class="col-lg-4 col-sm-6 text-center p-3" id="thirdTile" onmouseout="unfadeTile(thirdTileBg)" onmouseover="fadeTile(thirdTileBg, 3)"
+            onclick="location.href='pages/howto.html';" style="cursor: pointer;">
+            <div onmouseover="fadeTile(thirdTileBg, 3)" onmouseout="unfadeTile(thirdTileBg)" id="thirdTileBg"></div>
+            <h3 class="p-4 text-left text-white">Happy Valley!</h3>
+            <br>
+            <br>
+            <br>
+            <p class="p-4 text-right text-white">A great place to live, work and grow!</p>
+
+          </div>
+          <!-- Fourth Tile Section -->
+          <div class="col-lg-4 col-sm-6 text-center p-3" id="fourthTile" onmouseout="unfadeTile(fourthTileBg)" onmouseover="fadeTile(fourthTileBg, 4)"
+            onclick="location.href='pages/howto.html';" style="cursor: pointer;">
+            <div onmouseover="fadeTile(fourthTileBg, 4)" onmouseout="unfadeTile(fourthTileBg)" id="fourthTileBg"></div>
+            <h3 class="p-4 text-left text-white">SCHOLARLY COMMUNITY</h3>
+            <br>
+            <br>
+            <br>
+            <p class="p-4 text-right text-white">Sharing with the music education community</p>
+
+          </div>
+          <!-- Fifth Tile Section -->
+          <div class="col-lg-4 col-sm-6 text-center p-3" id="fifthTile" onmouseout="unfadeTile(fifthTileBg)" onmouseover="fadeTile(fifthTileBg, 5)"
+            onclick="location.href='pages/howto.html';" style="cursor: pointer;">
+            <div onmouseover="fadeTile(fifthTileBg, 5)" onmouseout="unfadeTile(fifthTileBg)" id="fifthTileBg"></div>
+            <!-- <h3 class="px-4 text-left text-white">SUPPORT</h3> -->
+            <h4 class="px-4 text-left text-white">Penn State wants to support YOU...</h4>
+            <ul class="mx-auto text-left text-white">
+              <li>Assistantships, Real world teaching experience</li>
+              <li>University Graduate Fellowship</li>
+              <li>Bunton-Waller Graduate Awards Program</li>
+              <li>Research and Travel Support</li>
+              <li>Beels-Dunikoski Grants for Graduate Students</li>
+              <li>Dissertation Scholarship</li>
+            </ul>
+
+          </div>
+          <!-- Sixth Tile Section -->
+          <div class="col-lg-4 col-sm-6 text-center p-3" id="sixthTile" onmouseout="unfadeTile(sixthTileBg)" onmouseover="fadeTile(sixthTileBg, 6)"
+            onclick="location.href='pages/howto.html';" style="cursor: pointer;">
+            <div onmouseover="fadeTile(sixthTileBg, 6)" onmouseout="unfadeTile(sixthTileBg)" id="sixthTileBg"></div>
+            <h3 class="p-4 text-left text-white">What path do YOU want to take?
+            </h3>
+            <br>
+            <br>
+            <br>
+            <p class="p-4 text-left text-white">This is YOUR journey!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+
+      <div class="mt-4 col-md-12" name="currentStudents" id="currStudents">
+        <div class="col-md-10 p-3 mx-auto">
+          <h2 class="pt-4 text-white text-center">Student Testimonials</h2>
+          <hr>
+          <div class="row">
+            <div class="col-md-2">
+              <img class="img-fluid" src="images/mara.jpg" alt="Mara (Student)">
+            </div>
+            <div class="col-md-10">
+              <h4>Mara E. Culp</h4>
+              <h5><i>“I have the freedom to explore my own thoughts and ideas.”</i></h5>
+              <p class="mb-0 mt-2">Ph.D. (ABD), MME: Penn State, BME: Siena Heights University</p>
+              <p class="mt-0">Age: 31, Hometown: Adrian, MI</p>
+            </div>
+          </div>
+          <hr>
+        </div>
+      </div>
+
+      <!-- CONTACT SECTION -->
+      <div class="mt-4 col-md-12" name="contact" id="contactSection">
+        <div class="col-md-8 mx-auto">
           <form id="contactForm">
             <h2 class="pt-4 text-white text-center">Questions? Contact us here!</h2>
             <div class="form-group">
@@ -154,32 +187,36 @@
               <small id="emailHelp" class="form-text text-muted">This email will be used to respond to your request.</small>
             </div>
             <div class="form-group">
-                <label for="messageInput">Message</label>
-                <textarea type="text" rows="3" class="form-control" id="messageInput" placeholder="Enter message"></textarea>
-              </div>
+              <label for="messageInput">Message</label>
+              <textarea type="text" rows="3" class="form-control" id="messageInput" placeholder="Enter message"></textarea>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <p class="pt-4 text-center text-green" id="contactConfirmation">Request sent! You will be contacted shortly.</p>
+            <p class="pt-4 m-0 text-center text-green" id="contactConfirmation">Request sent! You will be contacted shortly.</p>
           </form>
         </div>
       </div>
+
+    </div>
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="p-5 m-0 bg-dark" id="footer">
+    <div class="container">
+      <p class="m-0 text-center text-white">Penn State Music Education
+        <i> Social media links go here</i>
+      </p>
     </div>
     <!-- /.container -->
+  </footer>
 
-    <!-- Footer -->
-    <footer class="p-5 m-0 bg-dark" id="footer">
-      <div class="container">
-        <p class="m-0 text-center text-white">Penn State Music Education</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/firebaseDB.js"></script>
+  <script src="js/mainScripts.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/firebaseDB.js"></script>
-    <script src="js/mainScripts.js"></script>
-
-  </body>
+</body>
 
 </html>
