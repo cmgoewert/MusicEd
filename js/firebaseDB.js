@@ -21,3 +21,15 @@ function getMessages(callback){
         callback(data);
     });
 }
+
+function getTilesData(tile, callback){
+    database.ref("tiles/" + tile).once("value").then(snapshot => {
+        var data = snapshot.val();
+        callback(data);
+    });
+}
+
+function setTileData(tile, tileData) {
+    console.log("saved new tile data to Firebase");
+    database.ref("tiles/"+tile).set(tileData);
+}
