@@ -1,4 +1,5 @@
 var messages;
+var tile6;
 
 function fadeTile (tile, tileNum) {
     switch (tileNum){
@@ -26,9 +27,14 @@ function unfadeTile (tileNum) {
 
 function getData () {
     getMessages(function(data){
-        console.log(data);
         messages = data;
         console.log(messages);
+    });
+
+    getTilesData("tile6", function(data){
+        tile6 = data;
+        console.log(tile6);
+        document.getElementById("tile6").innerHTML = tile6;
     });
 }
 
