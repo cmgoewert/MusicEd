@@ -10,6 +10,13 @@ var config = {
   firebase.initializeApp(config);
   var database = firebase.database();
 
+function getAdminPass(callback){
+    database.ref("adminpassword/").once("value").then(snapshot => {
+        var data = snapshot.val();
+        callback(data);
+    });
+}
+
 function setMessages(messages) {
     console.log("saved messages to Firebase");
     database.ref("messages").set(messages);

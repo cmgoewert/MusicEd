@@ -31,43 +31,49 @@
         <div id="overlayContent">
             <div class="text-center">Please enter the admin password to edit content:</div>
             <br>
-            <form id="adminForm" class="text-center">
+            <form id="adminForm" class="text-center" onkeypress="return event.keyCode != 13;">
                 <input type="password" id="adminPass">
                 <button type="button" onclick="checkPassword()" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
 
-    <div class="form-group">
-        <label for="sel1">Select tile to edit:</label>
-        <select class="form-control" id="sel1">
-          <option value="tile1">Tile 1</option>
-          <option value="tile2">Tile 2</option>
-          <option value="tile3">Tile 3</option>
-          <option value="tile4">Tile 4</option>
-          <option value="tile5">Tile 5</option>
-          <option value="tile6">Tile 6</option>
-        </select>
-        <button type="submit" onclick="setContentToEdit()" class="btn btn-default">Submit</button>
-      </div> 
-
-    <textarea name="content" id="editor"></textarea>
-    <script>
-        var myEditor;
-
-        ClassicEditor
-            .create(document.querySelector('#editor'))
-            .then(editor => {
-                console.log('Editor was initialized', editor);
-                myEditor = editor;
-                setEditor(myEditor);
-            })
-            .catch(err => {
-                console.error(err.stack);
-            });
-    </script>
-    <button type="submit" class="btn btn-default" onclick="changeTile()">Submit</button>
-
+    <div class="container remove-all-margin" id="admin-container">
+        <div class="page-header text-center pt-3">
+            <h1>Music Education Admin Page</h1>      
+        </div>
+        <div class="form-group pb-5">
+            <label for="sel1">Select tile to edit:</label>
+            <select class="form-control" id="sel1" onchange="setContentToEdit()">
+              <option value="tile1">Tile 1</option>
+              <option value="tile2">Tile 2</option>
+              <option value="tile3">Tile 3</option>
+              <option value="tile4">Tile 4</option>
+              <option value="tile5">Tile 5</option>
+              <option value="tile6">Tile 6</option>
+            </select>
+          </div> 
+    
+        <label for="editor">Edit contents:</label>
+        <div class="pb-5">
+            <textarea name="content" id="editor"></textarea>
+        </div>  
+        <script>
+            var myEditor;
+    
+            ClassicEditor
+                .create(document.querySelector('#editor'))
+                .then(editor => {
+                    console.log('Editor was initialized', editor);
+                    myEditor = editor;
+                    setEditor(myEditor);
+                })
+                .catch(err => {
+                    console.error(err.stack);
+                });
+        </script>
+        <button type="submit" class="btn btn-default my-3 pt-2" onclick="changeTile()">Save Changes</button>
+    </div>
 </body>
 
 </html>

@@ -1,3 +1,12 @@
+body { 
+    background: url(../images/oldmainbackground.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+  }
+
 #passwordOverlay {
     position: fixed; /* Sit on top of the page content */
     display: block; /* Hidden by default */
@@ -7,7 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
 }
@@ -20,4 +29,10 @@
     color: white;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+}
+
+#admin-container {
+    background-color: #d6d4d3;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
